@@ -7,15 +7,7 @@ h1 {
     margin: auto;
     padding-left: 5rem;
     padding-right: 5rem;
-    height: 100%;
-}
-
-header {
-    background-color: #222222;
-    height: 6rem;
 }
 
 .header-wrap {
-    display: flex;
-    align-items: center;
 }

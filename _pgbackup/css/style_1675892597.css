@@ -1,0 +1,8 @@
+h1 {
+    color: red;
+}
+
+.container {
+    max-width: 1280px;
+    padding: 0;
+}
