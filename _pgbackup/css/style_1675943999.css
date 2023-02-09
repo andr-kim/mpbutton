@@ -26,20 +26,4 @@ header {
     display: flex;
     gap: 10px;
     font-size: 18px;
-<<<<<<< HEAD
-=======
-}
-
-.navlink {
-    color: #cbcaca;
-}
-
-.secondary0btn {
-}
-
-.secondary-btn {
-    color: #cacaca;
-    border: 0.2rem solid #d9d9d9;
-    padding: 1rem 1.5rem;
->>>>>>> 9732d8d (Start new developer)
 }
