@@ -18,12 +18,4 @@ header {
 .header-wrap {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-.header-nav {
-    color: #ffffff;
-    display: flex;
-    gap: 10px;
-    font-size: 18px;
 }
