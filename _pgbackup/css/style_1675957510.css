@@ -24,8 +24,8 @@ header {
 .header-nav {
     color: #ffffff;
     display: flex;
+    gap: 10px;
     font-size: 18px;
-    gap: 2rem;
 }
 
 .navlink {
