@@ -33,7 +33,8 @@ header {
 }
 
 .secondary-btn {
+    color: #cacaca;
     border: 0.2rem solid #d9d9d9;
     padding: 0.1rem 3.5rem;
-    border-radius: 100px;
+    background: red;
 }
