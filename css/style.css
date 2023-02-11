@@ -42,12 +42,13 @@ header {
     .header-wrap {
         display: flex;
     }
+
+
 }
 
 @media (max-width:1024px) {
     .hamburger {
         display: block;
-        padding: 20px 0;
     }
 
     .header-nav {
@@ -137,8 +138,3 @@ header {
     transform: rotate(45deg);
     top: 0;
 }
-
-top: before {
-    background-color: transparent;
-}
-    
