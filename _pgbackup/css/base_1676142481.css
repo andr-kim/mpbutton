@@ -25,13 +25,9 @@
 .container {
     max-width: 1280px;
     margin: auto;
-    padding-left: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 1.875)), 5rem);
-    padding-right: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 1.875)), 5rem);
+    padding-left: 5rem;
+    padding-right: 5rem;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-p {
-    font-size: clamp(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.5)), 2.2rem);
 }
