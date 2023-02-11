@@ -1,18 +1,14 @@
 h1 {
-    color: red;
+    font-size: 4.2rem;
 }
 
-.container {
-    max-width: 1280px;
-    margin: auto;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    height: 100%;
+h2 {
+    font-size: 3.6rem;
 }
 
 header {
-    background-color: #222222;
     height: 6rem;
+    background-color: var(--clr-base-ultra-dark);
 }
 
 .header-wrap {
@@ -22,10 +18,10 @@ header {
 }
 
 .header-nav {
-    color: #ffffff;
     display: flex;
     font-size: 18px;
     gap: 2rem;
+    color: var(--clr-white);
 }
 
 .navlink {
@@ -33,7 +29,16 @@ header {
 }
 
 .secondary-btn {
-    border: 0.2rem solid #d9d9d9;
+    border: 0.2rem solid var(--clr-base-light);
     padding: 0.1rem 3.5rem;
     border-radius: 100px;
+}
+
+.hero {
+}
+
+.hero-wrap {
+}
+
+.logo-wrap {
 }

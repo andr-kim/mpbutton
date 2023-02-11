@@ -15,67 +15,31 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
 }
 
-.nav-links {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.header-nav {
-    gap: 2rem;
-    display: flex;
-}
-
-@media (min-width:1024px) {
-    .hamburger {
-        display: none;
-        font-size: 24px;
-        cursor: pointer;
-    }
-}
-
-@media (max-width:1024px) {
+@media (max-width:1023px) {
     .header-wrap {
         display: flex;
     }
 }
 
-@media (max-width:1024px) {
-    .hamburger {
-        display: block;
-        padding: 20px 0;
-    }
-
+@media (max-width:1023px) {
     .header-nav {
         display: none;
+        max-height: 0;
         overflow: hidden;
         position: absolute;
-        background-color: var(--clr-white);
+        background-color: gray;
         text-align: center;
         right: 0;
         left: 0;
         z-index: 2;
-        top: 6rem;
+        top: 200px;
     }
-}
-
-.nav-links {
-    display: flex;
-    justify-content: flex-end;
-    gap: 2rem;
 }
 
 .navlink {
     color: var(--clr-base-light);
-}
-
-.navlink:hover {
-    transition: all .3s;
-    color: var(--clr-white);
 }
 
 .secondary-btn {
@@ -84,13 +48,32 @@ header {
     border-radius: 100px;
 }
 
-/* !!!!!hamburger!!!!! */
+.hero {
+}
+
+.hero-wrap {
+}
+
+.logo-wrap {
+}
+
+.navlink:hover {
+    transition: all .3s;
+    color: var(--clr-white);
+}
+
 #checkbox_toggle {
     display: none;
 }
 
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 .hamburger-line {
-    background-color: white;
+    background-color: rgb(254, 0, 0);
     display: block;
     height: 2px;
     position: relative;
@@ -117,10 +100,8 @@ header {
 }
 
 #checkbox_toggle:checked ~ .header-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
+    display: block;
+    max-height: 100%;
     transition: all .5s;
 }
 
@@ -141,4 +122,9 @@ header {
 top: before {
     background-color: transparent;
 }
-    
+
+.hamburger {
+    display: block;
+    padding: 20px 0;
+};
+}

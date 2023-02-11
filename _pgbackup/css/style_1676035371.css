@@ -1,0 +1,46 @@
+h1 {
+    font-size: 4.2rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+header {
+    height: 6rem;
+    background-color: var(--clr-base-ultra-dark);
+}
+
+.header-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width:102.3375rem) {
+    .header-nav {
+        display: none;
+        font-size: 18px;
+        gap: 2rem;
+        color: var(--clr-white);
+    }
+}
+
+.navlink {
+    color: var(--clr-base-light);
+}
+
+.secondary-btn {
+    border: 0.2rem solid var(--clr-base-light);
+    padding: 0.1rem 3.5rem;
+    border-radius: 100px;
+}
+
+.hero {
+}
+
+.hero-wrap {
+}
+
+.logo-wrap {
+}

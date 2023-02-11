@@ -1,0 +1,127 @@
+h1 {
+    font-size: 4.2rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+header {
+    height: 6rem;
+    background-color: var(--clr-base-ultra-dark);
+}
+
+.header-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width:1023px) {
+    .header-wrap {
+        display: flex;
+    }
+}
+
+@media (max-width:1023px) {
+    .header-nav {
+        display: none;
+        max-height: 0;
+        overflow: hidden;
+        position: absolute;
+        background-color: white;
+        text-align: center;
+    }
+
+    .navlink {
+        color: var(--clr-base-light);
+    }
+
+    .secondary-btn {
+        border: 0.2rem solid var(--clr-base-light);
+        padding: 0.1rem 3.5rem;
+        border-radius: 100px;
+    }
+
+    .hero {
+    }
+
+    .hero-wrap {
+    }
+
+    .logo-wrap {
+    }
+
+    .navlink:hover {
+        transition: all .3s;
+        color: var(--clr-white);
+    }
+
+    #checkbox_toggle {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .hamburger-line {
+        background-color: white;
+        display: block;
+        height: 2px;
+        position: relative;
+        width: 24px;
+    }
+
+    .hamburger-line::before,
+    .hamburger-line::after {
+        background-color: white;
+        content: '';
+        display: block;
+        position: absolute;
+        transition: all .3s;
+        width: 100%;
+        height: 100%;
+    }
+
+    .hamburger-line::before {
+        top: 7px;
+    }
+
+    .hamburger-line::after {
+        top: -7px;
+    }
+
+    #checkbox_toggle:checked ~ .header-nav {
+        display: block;
+        max-height: 100%;
+        transition: all .5s;
+    }
+
+    #checkbox_toggle:checked ~ .hamburger .hamburger-line {
+        background-color: transparent;
+    }
+
+    #checkbox_toggle: checked ~ .hamburger .hamburger-line: before {
+        transform: rotate(-45deg) ;
+        top: 0;
+    };
+
+    #checkbox_toggle: checked ~ .hamburger;
+
+    .hamburger-line: after {
+        transform: rotate(45deg);
+        top: 0;
+    };
+
+    top: before {
+        background-color: transparent;
+    }
+
+    .hamburger {
+        display: block;
+        padding: 20px 0;
+    };
+}
