@@ -34,16 +34,12 @@ header {
     .hamburger {
         display: none;
         font-size: 24px;
-        cursor: pointer;
-    }
+        cursor: pointer;}
 }
 
 @media (max-width:1024px) {
     .header-wrap {
-        display: flex;
-    }
-
-
+        display: flex;}
 }
 
 @media (max-width:1024px) {
@@ -136,5 +132,4 @@ header {
 
 #checkbox_toggle:checked ~ .hamburger .hamburger-line::after {
     transform: rotate(45deg);
-    top: 0;
-}
+    top: 0;}
