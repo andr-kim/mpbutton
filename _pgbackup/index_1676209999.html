@@ -10,17 +10,17 @@
         <link href="css/reset.css" rel="stylesheet" type="text/css">
         <link href="css/base.css" rel="stylesheet" type="text/css">
         <link href="css/style.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,800,900&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap">
     </head>     
     <body>
         <header>
-            <div class="container header-wrap"><a href="/" class="logo-wrap"><img src="img/logo.svg"></a>
+            <div class="container header-wrap">
+                <a href="" class="logo-wrap"><img class="logo-img" src="img/logo_mpbutton.svg"></a>
                 <div class="nav-links">
                     <input type="checkbox" id="checkbox_toggle"/>
-                    <nav class="header-nav"><a href="#" class="navlink">Возможности</a><a href="#" class="navlink">Инструменты</a><a href="#" class="navlink">Тарифы</a><a href="#" class="navlink">FAQ</a><a href="#" class="navlink">Контакты</a>
+                    <nav class="header-nav"><a href="" class="navlink">Возможности</a><a href="" class="navlink">Инструменты</a><a href="" class="navlink">Тарифы</a><a href="" class="navlink">FAQ</a><a href="" class="navlink">Контакты</a>
                     </nav>
-                </div>
-                <a href="#" class="secondary-btn">Войти</a>
+                </div><a href="" class="secondary-btn">login</a>
                 <label for="checkbox_toggle" class="hamburger"><span class="hamburger-line"></span>
                 </label>
             </div>
@@ -28,8 +28,8 @@
         <main>
             <section class="hero">
                 <div class="container hero-wrap">
-                    <div class="hero__left-clmn">
-                        <h1>Сервис аналитики <span>продаж и конкурентов на маркетплейсах</span></h1>
+                    <div class="hero__left-clmn" data-pg-collapsed>
+                        <h1>Сервис аналитики продаж и конкурентов на маркетплейсах</h1>
                         <div class="hero-grid">
                             <div class="hero__grid__img-wrap">
                                 <img src="../img/wb_logo.svg" class="hero__grid__image" "">
@@ -50,18 +50,19 @@
                                 <img src="../img/taobao_logo.svg" class="hero__grid__image">
                             </div>
                         </div>
-                        <p class="hero__p">Находите выгодные товары и ниши, увеличивайте продажи и доход вашего бизнеса</p><a href="" class="primary-btn"><img class="primary-btn__icon" src="../img/arrow-icon.svg">Попробовать бесплатно</a>
+                        <p class="hero__p">Находите выгодные товары и ниши, увеличивайте продажи и доход вашего бизнеса</p>
+                        <a href="" class="primary-btn"><img class="primary-btn__icon" src="../img/arrow-icon.svg">Попробовать бесплатно</a>
                     </div>
                     <div class="hero__right-clmn"></div>
                 </div>
             </section>
             <section class="benefits">
                 <div class="container benefits-wrap">
-                    <div class="benefits__list"></div>
-                    <div class="benefits__image"></div>
-                    <div class="benefits__list"></div>
+                    <div data-empty-placeholder class="benefits__list"></div>
+                    <div data-empty-placeholder class="benefits__image"></div>
+                    <div data-empty-placeholder class="benefits__list"></div>
                     <div class="benefits__image">
-                        <img class="benefits__image-img">
+                        <img src="https://pinegrow.com/placeholders/img11.jpg">
                     </div>
                     <div class="benefits__list">
                         <h2>ВЫГОДЫ ИСПОЛЬЗОВАНИЯ
@@ -87,14 +88,9 @@ MPBUTTON</h2>
 для всех крупнейших маркетплейсов</p>
                         </div>
                     </div>
-                    <div class="benefits__text">
-                        <p class="benefits__text-number">01</p>
-                        <p class="benefits__text_p">Узнайте, какие товары наиболее популярны в Wilberries, а какие - в Ozon, 
-что лучше идет на Amazon, а что на Alibaba.
-Продавайте товары, которые в спросе.</p>
-                    </div>
+                    <div data-empty-placeholder class="benefits__text"></div>
                 </div>
             </section>
         </main>
-        <footer></footer>
+        <footer data-empty-placeholder=""></footer>
     </body>

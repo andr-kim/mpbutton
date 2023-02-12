@@ -3,26 +3,19 @@ main {
 }
 
 h1 {
-    font-size: 5.6rem;
-    line-height: 0.7;
-    font-weight: 500;
-    width: 17ch;
-}
-
-h1 span {
-    font-size: 2.4rem;
+    font-size: clamp(2.1rem, calc(2.1rem + ((1vw - 0.32rem) * 0.9375)), 3.6rem);
+    line-height: 1.1;
+    text-transform: uppercase;
 }
 
 h2 {
-    font-size: 2.4rem;
+    font-size: 3.6rem;
     padding-bottom: 1rem;
-    line-height: 1.2;
 }
 
 header {
-    height: 8rem;
+    height: 6rem;
     background-color: var(--clr-base-ultra-dark);
-    position: relative;
 }
 
 .header-wrap {
@@ -160,16 +153,9 @@ header {
 
 /* !!!!!HERO!!!!! */
 .hero {
-    height: 100vh;
-    margin-top: -8rem;
-}
-
-@media (min-width:1729px) {
-    .hero {
-        height: auto;
-        padding-top: 20rem;
-        padding-bottom: 20rem;
-    }
+    height: 100%;
+    padding-top: clamp(6rem, calc(6rem + ((1vw - 0.32rem) * 8.75)), 20rem);
+    padding-bottom: clamp(6rem, calc(6rem + ((1vw - 0.32rem) * 8.75)), 20rem);
 }
 
 .hero-wrap {
@@ -269,21 +255,20 @@ header {
     display: grid;
     grid-template-areas: "a b" "a b" "a c";
     grid: 2/3;
-    grid-template-columns: 0.5fr  1fr;
-    gap: 5rem;
 }
 
 .benefits__list {
     grid-area: a;
+    background-color: red;
 }
 
 .benefits__image {
     grid-area: b;
+    background-color: blueviolet;
 }
 
 .benefits__text {
     grid-area: c;
-    display: flex;
 }
 
 .benefits__list-wrap {
@@ -293,31 +278,7 @@ header {
 }
 
 .benefits__list-item {
-    color: var(--clr-base-normal);
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.8rem;
 }
 
-.benefits__list-item:hover {
-    border-right: 1rem solid var(--clr-primary);
-    color: var(--clr-white);
-    transition: all .3s;
-}
-
-.benefits__image-img {
-    background-repeat: no-repeat;
-    background-image: url('../img/wildberries_screenshot.jpg');
-    background-size: content;
-    height: 100%;
-    width: 100%;
-    background-position: right top;
-}
-
-.benefits__text-number {
-    font-family: 'Roboto', sans-serif;
-    font-size: 6rem;
-    font-weight: 700;
-}
-
-.benefits__text_p {
-}

@@ -3,7 +3,7 @@ main {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: clamp(2.1rem, calc(2.1rem + ((1vw - 0.32rem) * 0.9375)), 3.6rem);
     line-height: 1.1;
     text-transform: uppercase;
 }
@@ -21,7 +21,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
+    gap: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 0.625)), 2rem);
 }
 
 .nav-links {
@@ -34,6 +34,10 @@ header {
 .header-nav {
     gap: 2rem;
     display: flex;
+}
+
+.logo-img {
+    width: clamp(12rem, calc(12rem + ((1vw - 0.32rem) * 5)), 20rem);
 }
 
 @media (min-width:1024px) {
@@ -69,7 +73,7 @@ header {
 
 .nav-links {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 2rem;
 }
 
@@ -84,7 +88,10 @@ header {
 
 .secondary-btn {
     border: 0.2rem solid var(--clr-base-light);
-    padding: 0.1rem 3.5rem;
+    padding-top: 0.1rem;
+    padding-left: clamp(1.5rem, calc(1.5rem + ((1vw - 0.32rem) * 1.25)), 3.5rem);
+    padding-right: clamp(1.5rem, calc(1.5rem + ((1vw - 0.32rem) * 1.25)), 3.5rem);
+    padding-bottom: 0.1rem;
     border-radius: 100px;
 }
 
@@ -155,20 +162,93 @@ header {
 }
 
 .hero-grid {
+    width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 1rem;
 }
 
+@media (max-width:767px) {
+    .hero-grid {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+}
+
 .hero__left-clmn {
-    width: 60%;
-    gap: 2rem;
-    display: flex;
+    width: 55%;
+    gap: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 0.625)), 3rem);
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+    display: flex;
+}
+
+@media (max-width:1024px) {
+    .hero__left-clmn {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
+
+.hero__grid__img-wrap {
+    border-radius: 6px;
+    background-color: var(--clr-ulra-light);
+    display: flex;
+    justify-content: center;
+    padding: clamp(0.5rem, calc(0.5rem + ((1vw - 0.32rem) * 0.9375)), 2rem);
+    height: clamp(7rem, calc(7rem + ((1vw - 0.32rem) * 1.875)), 10rem);
+}
+
+.hero__grid__image {
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero__right-clmn {
-    width: 40%;
+    width: 45%;
+    display: flex;
+    background-image: url('../img/Macbook.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
 }
+
+@media (max-width:1024px) {
+    .hero__right-clmn {
+        display: none;
+    }
+}
+
+.primary-btn {
+    display: flex;
+    gap: 1rem;
+    background: var(--clr-primary);
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 3rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: clamp(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.25)), 1.8rem);;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .hero__p {
+        text-align: center;
+    }
+}
+
+
+
+
+
+

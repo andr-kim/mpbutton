@@ -23,7 +23,7 @@
 }
 
 .container {
-    max-width: 1366px;
+    max-width: 1280px;
     margin: auto;
     padding-left: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 1.875)), 5rem);
     padding-right: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 1.875)), 5rem);
