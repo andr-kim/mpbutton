@@ -3,9 +3,7 @@ main {
 }
 
 h1 {
-    font-size: 3rem;
-    line-height: 1.1;
-    text-transform: uppercase;
+    font-size: 4.2rem;
 }
 
 h2 {
@@ -144,28 +142,9 @@ header {
 }
 
 /* !!!!!hero!!!!! */
-.hero {
-    height: 94vh;
-}
-
 .hero-wrap {
-    display: flex;
-    flex-direction: columns;
-    gap: 2rem;
-}
-
-.hero-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-}
-
-.hero__left-clmn {
-    width: 60%;
-    gap: 2rem;
-}
-
-.hero__right-clmn {
-    width: 40%;
+    height: 94vh;
+    background-image: url('../img/Macbook.png');
+    background-position: center bottom;
+    background-size: cover;
 }
