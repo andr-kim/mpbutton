@@ -29,7 +29,8 @@ video,
 canvas,
 svg {
     display: block;
-    max-width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
 }
 
 a {
