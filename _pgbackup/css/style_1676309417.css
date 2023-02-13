@@ -3,12 +3,11 @@ main {
 }
 
 h1 {
+    font-size: clamp(2.8rem, calc(2.8rem + ((1vw - 0.32rem) * 1.25)), 4.2rem);
     line-height: 1.2;
     font-weight: 500;
     letter-spacing: -2px;
-    max-width: 17ch;
-    min-width: 16ch;
-    font-size: clamp(2.4rem, calc(2.4rem + ((1vw - 0.32rem) * 1.6071)), 4.2rem);
+    width: 17ch;
 }
 
 h2 {
@@ -51,13 +50,13 @@ header {
 }
 
 .navlink {
-    color: var(--clr-white);
-    transition: all ease .5s;
+    color: var(--clr-base-light);
     font-size: 1.8rem;
 }
 
 .navlink:hover {
-    color: var(--clr-primary);
+    transition: all .3s;
+    color: var(--clr-white);
 }
 
 .secondary-btn {
