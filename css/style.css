@@ -119,7 +119,7 @@ header {
 
 @media (max-width:1024px) {
     .header-nav {
-        display: none;
+        /* display: none; */
         overflow: hidden;
         position: absolute;
         right: 0;
