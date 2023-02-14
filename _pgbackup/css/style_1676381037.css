@@ -41,29 +41,6 @@ header {
     width: clamp(12rem, calc(12rem + ((1vw - 0.32rem) * 5)), 20rem);
 }
 
-@media (min-width:1024px) {
-    .burger {
-        display: none;
-    }
-}
-
-@media (max-width:1024px) {
-    .header-nav {
-        display: none;
-        max-height: 0;
-        overflow: hidden;
-        position: absolute;
-        background-color: red;
-        text-align: center;
-    }
-
-    #checkbox_toggle:checked ˜ .header-nav {
-        display: block;
-        max-height: 100%;
-        transition: all ease .5s;
-    }
-}
-
 .navlink {
     color: var(--clr-white);
     transition: all ease .5s;
@@ -99,6 +76,7 @@ header {
 }
 
 .burger {
+    display: block;
     position: relative;
     width: 4rem;
     height: 4rem;
@@ -139,18 +117,44 @@ header {
     top: 0.9rem;
 }
 
-.burger:hover .burger-item {
+@media (max-width:1024px) {
+    .header-nav {
+        /* display: none; */
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        background-color: red;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+#checkbox_toggle:checked ~ .header-nav {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#checkbox_toggle:checked ~ .burger .burger-item {
     background-color: transparent;
 }
 
-.burger:hover .burger-item::before {
+#checkbox_toggle:checked ~ .burger .burger-item::before {
+    transform: rotate(-45deg);
     top: 0;
-    transform: rotate(45deg);
 }
 
-.burger:hover .burger-item::after {
+#checkbox_toggle:checked ~ .burger .burger-item::after {
+    transform: rotate(45deg);
     top: 0;
-    transform: rotate(135deg);
+}
+
+@media (min-width:1024px) {
+    .burger {
+        display: none;
+    }
 }
 
 /* Бургер меню - конец */

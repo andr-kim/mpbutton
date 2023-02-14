@@ -18,7 +18,6 @@ html {
 
 body {
     min-height: 100vh;
-    min-width: 320px;
     line-height: 1.5;
     font-size: 1.6rem;
     color: #ffffff;
@@ -36,8 +35,4 @@ svg {
 a {
     text-decoration: none;
     color: inherit;
-}
-
-li {
-    list-style: none;
 }
