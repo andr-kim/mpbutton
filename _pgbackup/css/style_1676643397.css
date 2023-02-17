@@ -245,15 +245,11 @@ header {
 }
 
 /* BENEFITS - начало */
-.benefits {
-    overflow: hidden;
-}
-
 .benefits-wrap {
     padding-top: 5rem;
     padding-bottom: 5rem;
     position: relative;
-    max-height: 80rem;
+    overflow: hidden;
 }
 
 .benefits-grid {

@@ -253,7 +253,7 @@ header {
     padding-top: 5rem;
     padding-bottom: 5rem;
     position: relative;
-    max-height: 80rem;
+    max-height: 100vh;
 }
 
 .benefits-grid {

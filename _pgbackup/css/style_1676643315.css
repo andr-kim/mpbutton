@@ -245,15 +245,12 @@ header {
 }
 
 /* BENEFITS - начало */
-.benefits {
-    overflow: hidden;
-}
-
 .benefits-wrap {
     padding-top: 5rem;
     padding-bottom: 5rem;
     position: relative;
-    max-height: 80rem;
+    overflow: hidden;
+    flex-wrap: wrap;
 }
 
 .benefits-grid {
@@ -294,7 +291,6 @@ header {
 }
 
 .benefits__tabs-content {
-    overflow: hidden;
 }
 
 .benefits__tabs-triggers__item:hover {

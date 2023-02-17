@@ -41,28 +41,6 @@ document.querySelector('.instruments__tabs-triggers__item').click();
 
 
 
-document.querySelectorAll('.i__tabs-triggers__item').forEach((item) =>
-	item.addEventListener('click', function (e) {
-		e.preventDefault();
-		const id = e.target.getAttribute('href').replace('#', '');
-
-
-		document.querySelectorAll('.i__tabs-triggers__item').forEach(
-			(child) => child.classList.remove('i__tabs-triggers__item--active')
-		);
-		document.querySelectorAll('.i__tabs-content-wrap').forEach(
-			(child) => child.classList.remove('i__tabs-content-wrap--active')
-		);
-
-		item.classList.add('i__tabs-triggers__item--active');
-		document.getElementById(id).classList.add('i__tabs-content-wrap--active')
-	})
-);
-
-document.querySelector('.i__tabs-triggers__item').click();
-
-
-
 
 
 

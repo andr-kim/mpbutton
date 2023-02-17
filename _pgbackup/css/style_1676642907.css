@@ -245,15 +245,9 @@ header {
 }
 
 /* BENEFITS - начало */
-.benefits {
-    overflow: hidden;
-}
-
 .benefits-wrap {
     padding-top: 5rem;
     padding-bottom: 5rem;
-    position: relative;
-    max-height: 80rem;
 }
 
 .benefits-grid {
@@ -270,12 +264,14 @@ header {
 
 .benefits__tabs-content-wrap {
     display: none;
+    overflow: hidden;
 }
 
 .benefits__tabs-content-wrap--active {
     display: grid;
     grid-template-rows: 0.5fr 2fr;
     gap: 5rem;
+    overflow: hidden;
 }
 
 .benefits__tabs-triggers {
@@ -291,10 +287,6 @@ header {
     text-align: left;
     font-weight: 200;
     line-height: 120%;
-}
-
-.benefits__tabs-content {
-    overflow: hidden;
 }
 
 .benefits__tabs-triggers__item:hover {
@@ -547,5 +539,4 @@ header {
 }
 
 /* Инструменты - конец */
-
 
