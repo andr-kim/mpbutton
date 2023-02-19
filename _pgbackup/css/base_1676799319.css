@@ -1,0 +1,36 @@
+:root {
+    --clr-primary: #d90429;
+    --clr-secondary: #2b2d42;
+    --clr-extra: #31344c;
+    --clr-base-ultra-dark: #222222;
+    --clr-base-dark: #4a4a4a;
+    --clr-base-normal: #838383;
+    --clr-base-light: #b4b4b4;
+    --clr-ulra-light: #eaeaea;
+    --clr-black: #000000;
+    --clr-white: #fffff;
+    --trp-black-80: rgba(0, 0, 0, 0.8);
+    --trp-black-60: rgba(0, 0, 0, 0.6);
+    --trp-black-40: rgba(0, 0, 0, 0.4);
+    --trp-black-20: rgba(0, 0, 0, 0.2);
+    --trp-black-10: rgba(0, 0, 0, 0.1);
+    --trp-black-5: rgba(0, 0, 0, 0.05);
+    --trp-white-80: rgba(255, 255, 255, 0.8);
+    --trp-white-60: rgba(255, 255, 255, 0.6);
+    --trp-white-40: rgba(255, 255, 255, 0.4);
+    --trp-white-20: rgba(255, 255, 255, 0.2);
+    --trp-white-10: rgba(255, 255, 255, 0.1);
+    --trp-white-5: rgba(255, 255, 255, 0.05);
+}
+
+.container {
+    height: 100%;
+    max-width: 1440px;
+    margin: auto;
+    padding-left: clamp(1.5rem, calc(1.5rem + ((1vw - 0.32rem) * 4.0179)), 6rem);
+    padding-right: clamp(1.5rem, calc(1.5rem + ((1vw - 0.32rem) * 4.0179)), 6rem);
+}
+
+p {
+    font-size: clamp(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.5)), 2.2rem);
+}

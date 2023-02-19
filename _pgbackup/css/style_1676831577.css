@@ -18,7 +18,7 @@ h2 {
 
 /* HEADER - начало */
 header {
-    background-color: var(--clr-secondary);
+    background-color: blue;
     text-align: center;
     position: fixed;
     width: 100%;
@@ -101,11 +101,11 @@ nav a {
     color: white;
     font-size: 1.8rem;
     opacity: 0;
-    transition: all ease .5s;
+    transition: opacity 150ms ease-in-out;
 }
 
 nav a:hover {
-    color: var(--clr-primary);
+    color: green;
 }
 
 .nav-toggle {
@@ -143,7 +143,7 @@ nav a:hover {
     position: relative;
     z-index: 9990;
     cursor: pointer;
-    background: rgba(78, 81, 116, 0.2);
+    background: #7b9af1;
     border-radius: .8rem;
     width: 4.5rem;
     height: 4.5rem;
@@ -224,7 +224,8 @@ nav a:hover {
 /* HERO - начало */
 @media (min-width:1024px) and (max-width:1729px) {
     .hero {
-        height: 100vh;
+        background-color: red;
+        height: auto;
         padding-top: 30rem;
         padding-bottom: 20rem;
     }
@@ -232,6 +233,7 @@ nav a:hover {
 
 @media (min-width:1729px) {
     .hero {
+        background-color: yellow;
         height: auto;
         padding-top: 40rem;
         padding-bottom: 30rem;
@@ -240,6 +242,7 @@ nav a:hover {
 
 @media (max-width:1024px) {
     .hero {
+        background-color: green;
         height: auto;
         padding-top: 20rem;
         padding-bottom: 10rem;
