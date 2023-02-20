@@ -1,14 +1,14 @@
 :root {
-    --clr-primary: #d90429;
+    --clr-primary: #A4161A;
     --clr-secondary: #2b2d42;
     --clr-extra: #31344c;
     --clr-base-ultra-dark: #222222;
     --clr-base-dark: #4a4a4a;
     --clr-base-normal: #838383;
     --clr-base-light: #b4b4b4;
-    --clr-ulra-light: #eaeaea;
+    --clr-ulra-light: #edf2f4;
     --clr-black: #000000;
-    --clr-white: #fffff;
+    --clr-white: #ffffff;
     --trp-black-80: rgba(0, 0, 0, 0.8);
     --trp-black-60: rgba(0, 0, 0, 0.6);
     --trp-black-40: rgba(0, 0, 0, 0.4);
@@ -33,4 +33,5 @@
 
 p {
     font-size: clamp(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.5)), 2.2rem);
+    color: var(--clr-secondary);
 }
