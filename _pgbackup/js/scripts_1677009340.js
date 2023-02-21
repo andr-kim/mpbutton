@@ -66,7 +66,7 @@ document.querySelector('.i__tabs-triggers__item').click();
 
 const faqs = document.querySelectorAll(".faq");
 
-faqs.forEach((faq) => {
+faqs.forEach(faq)  {
     faq.addEventListener("click", () => {
         faq.classList.toggle("active");
     });

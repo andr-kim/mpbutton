@@ -1,19 +1,21 @@
 main {
-    background: var(--clr-secondary);
+    background: var(--clr-ulra-light);
 }
 
 h1 {
-    line-height: 1.2;
-    font-weight: 500;
+    line-height: 100%;
+    font-weight: 700;
     letter-spacing: -2px;
     max-width: 17ch;
     min-width: 16ch;
-    font-size: clamp(2.4rem, calc(2.4rem + ((1vw - 0.32rem) * 1.6071)), 4.2rem);
+    font-size: 4.8rem;
+    color: var(--clr-black) !important;
 }
 
 h2 {
-    padding-bottom: 1rem;
-    text-transform: uppercase;
+    font-size: 2.4rem;
+    line-height: 120%;
+    color: var(--clr-black);
 }
 
 /* HEADER - начало */
@@ -23,7 +25,7 @@ header {
     position: fixed;
     width: 100%;
     z-index: 999;
-    height: 10rem;
+    height: 8rem;
 }
 
 .header-container {
@@ -104,10 +106,6 @@ nav a {
     transition: all ease .5s;
 }
 
-nav a:hover {
-    color: var(--clr-primary);
-}
-
 .nav-toggle {
     display: none;
 }
@@ -143,7 +141,7 @@ nav a:hover {
     position: relative;
     z-index: 9990;
     cursor: pointer;
-    background: #7b9af1;
+    background: rgba(78, 81, 116, 0.2);
     border-radius: .8rem;
     width: 4.5rem;
     height: 4.5rem;
@@ -204,6 +202,10 @@ nav a:hover {
         display: flex;
         gap: 2rem;
     }
+
+    nav a:hover {
+        color: var(--clr-primary);
+    }
 }
 
 .secondary-btn {
@@ -212,6 +214,7 @@ nav a:hover {
     border-radius: 0.8rem;
     font-weight: 300;
     font-size: clamp(1.7rem, calc(1.7rem + ((1vw - 0.32rem) * 0.0893)), 1.8rem);
+    color: #ffffff;
 }
 
 .secondary-btn:hover {
@@ -224,9 +227,8 @@ nav a:hover {
 /* HERO - начало */
 @media (min-width:1024px) and (max-width:1729px) {
     .hero {
-        background-color: #d90429;
         height: 100vh;
-        padding-top: 30rem;
+        padding-top: 25rem;
         padding-bottom: 20rem;
     }
 }
@@ -234,8 +236,8 @@ nav a:hover {
 @media (min-width:1729px) {
     .hero {
         height: auto;
-        padding-top: 40rem;
-        padding-bottom: 30rem;
+        padding-top: 20rem;
+        padding-bottom: 10rem;
     }
 }
 
@@ -296,19 +298,19 @@ nav a:hover {
 }
 
 .hero__p {
-    margin-bottom: 4rem;
-    font-size: clamp(1.6rem, calc(1.6rem + ((1vw - 0.32rem) * 0.1786)), 1.8rem);
-    font-weight: 300;
-    line-height: 1.6;
+    margin-bottom: 3rem;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 140%;
     max-width: 30ch;
 }
 
 .hero__grid__img-wrap {
-    border-radius: 8px;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     padding: 5rem 2rem;
-    background-color: #31344c;
+    background-color: var(--clr-white) !important;
 }
 
 .hero__grid__image {
@@ -324,35 +326,30 @@ nav a:hover {
 }
 
 .primary-btn {
-    background: var(--clr-primary);
-    font-weight: 300;
+    background: #A4161A;
+    font-weight: 400;
     font-size: clamp(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.3571)), 1.8rem);
     display: inline-flex;
     gap: 1rem;
-    padding: 1rem 1.6rem;
+    padding: 1.2rem 1.8rem 1.3rem;
     border-radius: 0.8rem;
     align-items: center;
-}
-
-.primary-btn:hover {
-    background: rgba(244, 0, 9, 0.6);
-    color: rgba(255, 255, 255, 0.6);
-    font-weight: 300;
-    font-size: clamp(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.3571)), 1.8rem);
-    display: inline-flex;
-    gap: 1rem;
-    padding: 1rem 1.6rem;
-    border-radius: 0.8rem;
+    color: #ffffff;
 }
 
 .primary-btn__icon {
-    background: rgba(255, 255, 255, 0.3);
+    background: #BA181B;
     border-radius: 8px;
     padding: 1rem;
 }
 
+.primary-btn:hover {
+    background: #BA181B;
+    color: rgb(255, 255, 255);
+}
+
 .primary-btn:hover .primary-btn__icon {
-    background: #d90429;
+    background: #A4161A;
 }
 
 /* BENEFITS - начало */
@@ -368,7 +365,7 @@ nav a:hover {
 .benefits-grid {
     display: grid;
     grid-template-columns: 0.5fr  1fr;
-    gap: 5rem;
+    gap: 4rem;
 }
 
 .benefits__tabs-wrap {
@@ -384,7 +381,7 @@ nav a:hover {
 .benefits__tabs-content-wrap--active {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 2rem;
     overflow: hidden;
 }
 
@@ -395,11 +392,11 @@ nav a:hover {
 }
 
 .benefits__tabs-triggers__item {
-    color: var(--clr-base-normal);
-    font-family: 'Roboto Condensed', sans-serif;
+    color: var(--clr-secondary);
+    font-family: 'Inter', sans-serif;
     font-size: 1.8rem;
     text-align: left;
-    font-weight: 200;
+    font-weight: 400;
     line-height: 120%;
 }
 
@@ -408,7 +405,7 @@ nav a:hover {
 }
 
 .benefits__tabs-triggers__item:hover {
-    color: var(--clr-white);
+    color: var(--clr-primary);
 }
 
 .benefits__image-img {
@@ -420,21 +417,79 @@ nav a:hover {
 }
 
 .benefits__text-number {
-    font-family: 'Roboto', sans-serif;
-    color: var(--trp-white-20);
-    font-size: 12rem;
+    font-family: 'Inter', sans-serif;
+    color: var(--clr-secondary);
+    font-size: 8rem;
     font-weight: 700;
     line-height: 100%;
 }
 
 .benefits__text {
-    justify-content: space-between;
     display: flex;
+    gap: 2rem;
+    align-items: center;
 }
 
 .benefits__text_p {
     min-width: 16ch;
-    max-width: 35ch;
+    max-width: 50ch;
+}
+
+@media (max-width:501px) {
+    .benefits-grid {
+        display: none;
+    }
+}
+
+@media (min-width:501px) {
+    .accordion {
+        display: none;
+    }
+}
+
+.b__accordion-wrap {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.b__a__title {
+    font-size: 3rem;
+}
+
+.faq {
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #A4161A;
+    cursor: pointer;
+    width: 100%;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h3 {
+    font-size: 1.8rem;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+
+.answer p {
+    padding-top: 1rem;
+    line-height: 120%;
+    font-size: 1.4rem;
+}
+
+.faq.active .answer {
+    max-height: 300px;
 }
 
 /* BENEFITS - конец */
@@ -578,6 +633,7 @@ nav a:hover {
     text-align: center;
     font-weight: 200;
     line-height: 120%;
+    grid-area: 1 / 1 / 2 / 3;
 }
 
 .instruments__tabs-triggers__item:hover {
