@@ -21,5 +21,3 @@ document.querySelector('[benefits__tabs-triggers__item="#tab-01"]').classList.ad
 
 
 
-
-

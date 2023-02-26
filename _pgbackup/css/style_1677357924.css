@@ -641,6 +641,7 @@ nav a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-bottom: 2px solid rgba(229,229,229);
 }
 
 .instruments_tab-btn {
@@ -649,46 +650,17 @@ nav a {
     justify-content: center;
     padding: 1rem 4rem;
     border-radius: 2rem;
-    border: 2px solid gray;
+    border-left-color: #363636;
+    border-right-color: #000000;
+    border-style: solid;
     font-size: 1.8rem;
 }
 
 .instruments_tab-box .instruments_tab-btn {
-    color: gray;
+    color: black;
     background: none;
     padding: 1.8rem;
     cursor: pointer;
 }
 
-.instruments_tab-btn.active {
-    border: 3px solid red;
-    color: black;
-}
 
-.instruments_content-box {
-    padding: 20px;
-}
-
-.instruments_content-box .content {
-    display: none;
-    animation: moving .5s ease;
-}
-
-@keyframes moving {
-    from {
-        transform: translateX(50px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
-
-.instruments_content-box .content.active {
-    display: block;
-}
-
-/* Tab in Tab- начало */
-/* Tab in Tab - конец */

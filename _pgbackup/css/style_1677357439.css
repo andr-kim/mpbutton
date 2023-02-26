@@ -634,6 +634,10 @@ nav a {
 .instruments-wrap {
     padding-top: 5rem;
     padding-bottom: 5rem;
+    width: 100%;
+    background-color: red;
+    box-shadow: 0 2px 16px rgba(0,0,0,.1);
+    border-radius: 20px;
 }
 
 .instruments_tab-box {
@@ -641,32 +645,24 @@ nav a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-.instruments_tab-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 4rem;
-    border-radius: 2rem;
-    border: 2px solid gray;
-    font-size: 1.8rem;
+    border-bottom: 2px solid rgba(229,229,229);
+    position: relative;
 }
 
 .instruments_tab-box .instruments_tab-btn {
-    color: gray;
+    color: black;
     background: none;
-    padding: 1.8rem;
+    border: none;
+    padding: 2rem;
     cursor: pointer;
 }
 
-.instruments_tab-btn.active {
-    border: 3px solid red;
-    color: black;
+.instruments_tab-box .instruments_tab-btn.active {
+    color: green;
 }
 
 .instruments_content-box {
-    padding: 20px;
+    padding: 2rem;
 }
 
 .instruments_content-box .content {
@@ -690,5 +686,12 @@ nav a {
     display: block;
 }
 
-/* Tab in Tab- начало */
-/* Tab in Tab - конец */
+.instruments_line {
+    position: absolute;
+    top: 6.2rem;
+    left: 0;
+    width: 33.33%;
+    height: .5rem;
+    border-radius: 10px;
+    background-color: black;
+}
