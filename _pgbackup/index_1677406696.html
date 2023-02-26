@@ -12,9 +12,10 @@
         <link href="css/style.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,800,900&display=swap">
         <link href="css/reset.css" rel="stylesheet" type="text/css">
-        <link href="js/scripts.js" rel="stylesheet" type="text/css">
         <link href="script.js" rel="stylesheet" type="text/css">
-        <link href="scripttab.js" rel="stylesheet" type="text/css">
+        <link href="js/instruments-tab.js" rel="stylesheet" type="text/css">
+        <link href="js/scripts.js" rel="stylesheet" type="text/css">
+        <link href="js/itabi.js" rel="stylesheet" type="text/css">
     </head>
     <body>
         <header>
@@ -54,8 +55,7 @@
                     <div class="hero-grid">
                         <div class="hero-col hero-col--a">
                             <h1>Сервис аналитики продаж и конкурентов на маркетплейсах</h1>
-                            <p class="hero__p">Находите выгодные товары и ниши, увеличивайте продажи и доход вашего бизнеса</p>
-                            <a href="" class="primary-btn"><img class="primary-btn__icon" src="img/arrow-icon.svg">Попробовать
+                            <p class="hero__p">Находите выгодные товары и ниши, увеличивайте продажи и доход вашего бизнеса</p><a href="" class="primary-btn"><img class="primary-btn__icon" src="img/arrow-icon.svg">Попробовать
 							бесплатно</a>
                         </div>
                         <div class="hero-col hero-col--b">
@@ -89,10 +89,14 @@
                     <div class="benefits-grid">
                         <div class="benefits__tabs-wrap">
                             <div class="benefits__tabs-triggers"><a href="#tab-01" class="benefits__tabs-triggers__item">Найдёте нишу и товары-бестселлеры<br> для всех
-                                крупнейших маркетплейсов</a><a href="#tab-02" class="benefits__tabs-triggers__item">Увеличите продажи своих товаров</a><a href="#tab-03" class="benefits__tabs-triggers__item">Выберете под свой товар<br> подходящий
-                                маркетплейс</a><a href="#tab-04" class="benefits__tabs-triggers__item">Будете в курсе рыночных трендов</a><a href="#tab-05" class="benefits__tabs-triggers__item">Превзойдете конкурентов</a><a href="#tab-06" class="benefits__tabs-triggers__item">Оптимизируете поставки и закупку</a><a href="#tab-07" class="benefits__tabs-triggers__item">Снизите риски и расходы</a><a href="#tab-08" class="benefits__tabs-triggers__item">Сможете масштабировать <br> и диверсифицировать
-                                бизнес</a><a href="#tab-09" class="benefits__tabs-triggers__item">Сможете отслеживать всю <br>внутреннюю аналитику в
-                                одном месте</a>
+								крупнейших маркетплейсов</a><a href="#tab-02" class="benefits__tabs-triggers__item">Увеличите продажи
+								своих товаров</a><a href="#tab-03" class="benefits__tabs-triggers__item">Выберете под свой товар<br>
+								подходящий
+								маркетплейс</a><a href="#tab-04" class="benefits__tabs-triggers__item">Будете в курсе рыночных
+								трендов</a><a href="#tab-05" class="benefits__tabs-triggers__item">Превзойдете конкурентов</a><a href="#tab-06" class="benefits__tabs-triggers__item">Оптимизируете поставки и закупку</a><a href="#tab-07" class="benefits__tabs-triggers__item">Снизите риски и расходы</a><a href="#tab-08" class="benefits__tabs-triggers__item">Сможете масштабировать <br> и диверсифицировать
+								бизнес</a><a href="#tab-09" class="benefits__tabs-triggers__item">Сможете отслеживать всю <br>внутреннюю
+								аналитику в
+								одном месте</a>
                             </div>
                         </div>
                         <div class="benefits__tabs-content">
@@ -103,8 +107,8 @@
                                 <div class="benefits__text">
                                     <p class="benefits__text-number">01</p>
                                     <p class="benefits__text_p">Узнайте, какие товары наиболее популярны в
-                                    Wilberries, а какие - в Ozon,
-                                    что лучше идет на Amazon, а что на Alibaba. Продавайте товары, которые в спросе.</p>
+									Wilberries, а какие - в Ozon,
+									что лучше идет на Amazon, а что на Alibaba. Продавайте товары, которые в спросе.</p>
                                 </div>
                             </div>
                             <div id="tab-02" class="benefits__tabs-content-wrap">
@@ -183,25 +187,37 @@
                     </div>
                 </div>
             </section>
-            <section class="benefits-adaptive"> 
-                <div class="container benefits-wrap">
+            <section class="benefits-adaptive">
+                <div class="container benefits-wrap" ata-empty-placeholder>
                     <div class="accordion">
                         <div class="item">
-                            <p class="ba__title">Title</p>
+                            <p class="title">Title</p>
+                            <div class="box">
+                                <p class="text">Text</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p class="title">Title</p>
+                            <div class="box">
+                                <p class="text">Text</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p class="title">Title</p>
                             <div class="box">
                                 <p class="text">Text</p>
                             </div>
                         </div>
                     </div>
-            </section>             
+                </div>
+            </section>
             <section class="testing">
                 <div class="container testing-wrap">
                     <div class="testing-grid">
                         <div class="testing-grid--col-a">
                             <h3 class="testing_h3">Попробуйте бесплатно</h3>
                             <p class="testing_txt">Пройдите быструю регистрацию без привязки
-							карты и получите бесплатный доступ ко всему функционалу аналитического сервиса</p>
-                            <a href="" class="primary-btn"><img class="primary-btn__icon" src="img/arrow-icon.svg">Протестировать</a>
+							карты и получите бесплатный доступ ко всему функционалу аналитического сервиса</p><a href="#" class="primary-btn"><img class="primary-btn__icon" src="img/arrow-icon.svg">Протестировать</a>
                         </div>
                         <div class="testing-grid--col-b">
                             <img src="img/iphone.png" class="testing-img">
@@ -256,61 +272,24 @@
             </section>
             <section class="instruments">
                 <div class="container instruments-wrap" ata-empty-placeholder>
-                    <div class="instruments-grid">
-                        <div class="instruments__tabs-wrap">
-                            <h2>Инструменты</h2>
-                            <div class="instruments__tabs-triggers">
-                                <a href="#tab-11" class="instruments__tabs-triggers__item">Внешняя
-								аналитика</a>
-                                <a href="#tab-12" class="instruments__tabs-triggers__item">Внутрення аналитика</a>
-                                <a href="#tab-13" class="instruments__tabs-triggers__item">Чпт</a>
-                            </div>
-                        </div>
-                        <div class="instruments__tabs-content">
-                            <div id="tab-11" class="instruments__tabs-content-wrap">
-                                <div class="i__tabs-wrap">
-                                    <div class="i__tabs-triggers">
-                                        <a href="#tab-21" class="i__tabs-triggers__item">Рынок</a>
-                                        <a href="#tab-22" class="i__tabs-triggers__item">Конкуренты</a>
-                                        <a href="#tab-23" class="i__tabs-triggers__item">Аналитика</a>
-                                    </div>
-                                </div>
-                                <div class="i__tabs-content">
-                                    <div id="tab-21" class="i__tabs-content-wrap">
-                                        <div class="benefits__image">
+                    <div class="instruments_tab-box">
+                        <div class="instruments_tab-btn active">Внешняя аналитика</div>
+                        <div class="instruments_tab-btn">Внутренняя аналитика</div>
+                        <div class="instruments_tab-btn">Чат-бот в Telegram</div>
+                    </div>
+                    <div class="instruments_content-box">
+                        <div class="content active"> 
+                            вкладка 1
 </div>
-                                        <div class="benefits__text">
-                                            <p class="benefits__text_p" style="font-size: 1.8rem;">Вкладка Рынок</p>
-                                        </div>
-                                    </div>
-                                    <div id="tab-22" class="i__tabs-content-wrap">
-                                        <div class="i__text">
-                                            <p class="i__text_p" style="font-size: 1.8rem;">Вкладка конкурентов</p>
-                                        </div>
-                                    </div>
-                                    <div id="tab-23" class="i__tabs-content-wrap">
-                                        <div class="i__text">
-                                            <p class="i__text_p" style="font-size: 1.8rem;">Вкладка аналитика</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="tab-12" class="instruments__tabs-content-wrap">
-                                <div class="i__text">
-                                    <p class="i__text_p" style="font-size: 1.8rem;">Сезонные колебания</p>
-                                </div>
-                            </div>
-                            <div id="tab-13" class="instruments__tabs-content-wrap">
-                                <div class="i__text">
-                                    <p class="i__text_p" style="font-size: 1.8rem;">Рыночные тренды</p>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="content">вкладка 2</div>
+                        <div class="content">вкладка 3</div>
                     </div>
                 </div>
             </section>
         </main>
         <footer></footer>
-        <script src="script.js"></script>
+        <script src="js/script.js"></script>
         <script src="js/scripts.js"></script>         
+        <script src="js/instruments-tab.js"></script>         
+        <script src="js/itabi.js"></script>         
     </body>
