@@ -9,8 +9,7 @@ h1 {
     max-width: 17ch;
     min-width: 16ch;
     font-size: clamp(2.4rem, calc(2.4rem + ((1vw - 0.32rem) * 1.5)), 4.8rem);
-    color: var(--clr-black) !important;
-		background-color: red;
+    color: var(--clr-black);
 }
 
 h2 {
