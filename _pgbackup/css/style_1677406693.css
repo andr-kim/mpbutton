@@ -691,4 +691,76 @@ nav a {
 }
 
 /* Tab in Tab- начало */
+.content.active {
+    position: relative;
+    height: 80vh;
+}
+
+.tabs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 5px 5px 10px 5px #ccc;
+    overflow: hidden;
+}
+
+.tab-primary {
+    font-size: 2.1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.tab-secondary {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.tabs .tab-header {
+    float: left;
+    width: 30%;
+    height: 100%;
+    border-right: 1px solid #ccc;
+    padding: 10px 0px;
+}
+
+.tab-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs .tab-header > div {
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.tabs .tab-header > div:hover,
+.tabs .tab-header > div.active {
+    color: red;
+}
+
+.tab-indicator {
+}
+
+.tabs .tab-content {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.tabs .tab-content > div {
+    position: absolute;
+    text-align: center;
+    padding: 40px 20px;
+    top: -200%;
+}
+
+.tabs .tab-content > div.active {
+    top: 0px;
+}
+
 /* Tab in Tab - конец */

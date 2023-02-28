@@ -671,24 +671,8 @@ nav a {
 
 .instruments_content-box .content {
     display: none;
-    animation: moving .5s ease;
-}
-
-@keyframes moving {
-    from {
-        transform: translateX(50px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateX(0px);
-        opacity: 1;
-    }
 }
 
 .instruments_content-box .content.active {
     display: block;
 }
-
-/* Tab in Tab- начало */
-/* Tab in Tab - конец */

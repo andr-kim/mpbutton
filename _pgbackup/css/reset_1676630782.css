@@ -2,7 +2,6 @@ html {
     height: 100%;
     font-size: 62.5%;
     font-family: 'Inter', sans-serif;
-    scroll-behavior: smooth;
 }
 
 * {
@@ -20,9 +19,9 @@ html {
 body {
     min-height: 100vh;
     min-width: 320px;
-    line-height: 1.4;
+    line-height: 1.5;
     font-size: 1.6rem;
-    color: #2b2d42;
+    color: #ffffff;
 }
 
 img,
@@ -37,7 +36,6 @@ svg {
 a {
     text-decoration: none;
     color: inherit;
-    text-align: center;
 }
 
 li {
