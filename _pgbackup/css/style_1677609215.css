@@ -14,7 +14,7 @@ h1 {
 
 h2 {
     font-size: clamp(2.1rem, calc(2.1rem + ((1vw - 0.32rem) * 0.6875)), 3.2rem);
-    line-height: 110%;
+    line-height: 120%;
     color: var(--clr-black);
     margin-bottom: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 1.25)), 3rem);
 }
@@ -358,7 +358,7 @@ nav a {
 
 .accordion .title:hover {
     cursor: pointer;
-    background-color: lightgray;
+    background-color: #d1e5bf;
 }
 
 .accordion .title::before {
@@ -418,7 +418,7 @@ nav a {
 
 .testing-wrap {
     padding-top: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 5.3571)), 7rem);
-    padding-bottom: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 4.4643)), 7rem);
+    padding-bottom: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 5.3571)), 7rem);
 }
 
 .testing-grid {
@@ -468,13 +468,15 @@ nav a {
 }
 
 .for-whom-wrap {
-    padding-top: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 5.3571)), 7rem);
-    padding-bottom: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 5.3571)), 7rem);
+    padding-top: clamp(5rem, calc(5rem + ((1vw - 0.32rem) * 3.125)), 10rem);
+    padding-bottom: clamp(5rem, calc(5rem + ((1vw - 0.32rem) * 3.125)), 10rem);
 }
 
 .whom-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    min-height: 43rem;
+    max-height: 60rem;
     gap: 2rem;
 }
 
@@ -497,8 +499,6 @@ nav a {
     color: var(--clr-base-normal);
     font-size: clamp(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.25)), 1.8rem);
     text-align: center;
-    line-height: 120%;
-    font-weight: 500;
 }
 
 .whom-txt_wrap {
@@ -513,8 +513,8 @@ nav a {
 /* Кому будет полезен сервис - конец */
 /* Инструменты - начало */
 .instruments-wrap {
-    padding-top: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 4.4643)), 7rem);
-    padding-bottom: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 4.4643)), 7rem);
+    padding-top: clamp(5rem, calc(5rem + ((1vw - 0.32rem) * 3.125)), 10rem);
+    padding-bottom: clamp(5rem, calc(5rem + ((1vw - 0.32rem) * 3.125)), 10rem);
 }
 
 .instruments_tab-box {
@@ -639,7 +639,6 @@ nav a {
     .whom-grid-col {
         padding: 2rem;
         gap: 2rem;
-        grid-template-rows: 1fr max-content;
     }
 }
 
@@ -688,27 +687,18 @@ nav a {
         top: 0rem;
         left: 2rem;
     }
+
+    .whom-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-height: 160rem;
+        gap: 1rem;
+    }
 }
 
 @media (max-width:600px) {
     .hero-col--b {
         display: none;
-    }
-}
-
-@media (min-width:500px) and (max-width:1024px) {
-    .whom-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-    }
-}
-
-@media (max-width:500px) {
-    .whom-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1rem;
     }
 }
 
@@ -744,6 +734,13 @@ nav a {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .whom-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-height: 300rem;
+        gap: 1rem;
     }
 
     .instruments_content-box .content {
