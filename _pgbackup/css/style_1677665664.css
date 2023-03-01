@@ -9,13 +9,14 @@ h1 {
     max-width: 17ch;
     min-width: 16ch;
     font-size: clamp(2.4rem, calc(2.4rem + ((1vw - 0.32rem) * 1.5)), 4.8rem);
-    color: var(--clr-black) !important;
+    color: var(--clr-black);
 }
 
 h2 {
     font-size: clamp(2.1rem, calc(2.1rem + ((1vw - 0.32rem) * 0.6875)), 3.2rem);
-    line-height: 120%;
+    line-height: 110%;
     color: var(--clr-black);
+    margin-bottom: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 1.25)), 3rem);
 }
 
 /* HEADER - начало */
@@ -31,35 +32,6 @@ header {
 .header-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-}
-
-@media (max-width:1024px) {
-    .header-container {
-        display: grid;
-        grid-template-columns: auto 10rem 7rem;
-    }
-
-    .header__btn__wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        order: 1;
-    }
-
-    .nav__wrapper {
-        order: 2;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-    }
-
-    nav ul {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
 }
 
 nav {
@@ -184,30 +156,6 @@ nav a {
     top: 1.1rem;
 }
 
-@media (min-width:1024px) {
-    .nav-toggle-label {
-        display: none;
-    }
-
-    nav a {
-        opacity: 1;
-    }
-
-    nav {
-        all: unset;
-        align-items: center;
-    }
-
-    nav ul {
-        display: flex;
-        gap: 2rem;
-    }
-
-    nav a:hover {
-        color: var(--clr-primary);
-    }
-}
-
 .secondary-btn {
     border: 0.1rem solid #ffffff;
     padding: 0.4rem 1.4rem 0.5rem;
@@ -225,30 +173,6 @@ nav a {
 
 /* HEADER - конец */
 /* HERO - начало */
-@media (min-width:1024px) and (max-width:1729px) {
-    .hero {
-        height: 100vh;
-        padding-top: 25rem;
-        padding-bottom: 15rem;
-    }
-}
-
-@media (min-width:1729px) {
-    .hero {
-        height: auto;
-        padding-top: 20rem;
-        padding-bottom: 10rem;
-    }
-}
-
-@media (max-width:1024px) {
-    .hero {
-        height: auto;
-        padding-top: 20rem;
-        padding-bottom: 10rem;
-    }
-}
-
 .hero-wrap {
     height: 100%;
     display: flex;
@@ -261,26 +185,6 @@ nav a {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: max-content;
     gap: 5rem;
-}
-
-@media (max-width:1024px) {
-    .hero-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .hero-col--a {
-        width: 100%;
-    }
-
-    h1 {
-        max-width: 30ch;
-    }
-
-    .hero-col--a p {
-        max-width: 45ch;
-        margin-bottom: 2.5rem;
-    }
 }
 
 .hero__cards-wrap {
@@ -298,7 +202,7 @@ nav a {
 }
 
 .hero__p {
-    margin-bottom: 3rem;
+    margin-bottom: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 1.7857)), 3rem);
     font-size: clamp(1.8rem, calc(1.8rem + ((1vw - 0.32rem) * 0.375)), 2.4rem);
     font-weight: 400;
     line-height: 140%;
@@ -317,12 +221,6 @@ nav a {
     background-repeat: no-repeat;
     background-size: cover;
     height: 4.8rem;
-}
-
-@media (max-width:580px) {
-    .hero-col--b {
-        display: none;
-    }
 }
 
 .primary-btn {
@@ -353,26 +251,19 @@ nav a {
 }
 
 /* BENEFITS - начало */
-@media (max-width: 501px) {
-    .benefits {
-        display: none;
-    }
-}
-
 .benefits {
     overflow: hidden;
 }
 
 .benefits-wrap {
-    padding-bottom: 10rem;
+    padding-bottom: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 8.0357)), 10rem);
     gap: 2rem;
 }
 
 .benefits-grid {
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    gap: 6rem;
-    margin-top: 4rem;
+    grid-template-columns: 0.6fr 1fr;
+    gap: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 2.6786)), 5rem);
 }
 
 .benefits__tabs-wrap {
@@ -401,7 +292,7 @@ nav a {
 .benefits__tabs-triggers__item {
     color: var(--clr-secondary);
     font-family: 'Inter', sans-serif;
-    font-size: clamp(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.25)), 1.8rem);
+    font-size: clamp(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.3571)), 1.8rem);
     text-align: left;
     font-weight: 400;
     line-height: 120%;
@@ -448,29 +339,26 @@ nav a {
 }
 
 /* BENEFITS mobile - начало */
-@media (min-width: 501px) {
-    .benefits-adaptive {
-        display: none;
-    }
+.accordion {
+    margin-top: 2rem;
 }
 
 .accordion .item {
     overflow: hidden;
     margin-bottom: 10px;
     border-radius: 8px;
-    box-shadow: 1px 1px 2px 1px rgba(100, 15, 15, 0.2);
 }
 
 .accordion .title {
     position: relative;
-    padding: 10px;
+    padding: 2rem 4rem 2rem 2rem;
     background-color: #fff;
     transition: 0.3s background-color;
 }
 
 .accordion .title:hover {
     cursor: pointer;
-    background-color: #d1e5bf;
+    background-color: lightgray;
 }
 
 .accordion .title::before {
@@ -512,14 +400,25 @@ nav a {
     background-color: #fff;
 }
 
+.accordion-content-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    overflow: hidden;
+    padding: 2rem 1rem;
+}
+
+.accordion_text {
+}
+
 /* BENEFITS - конец */
 /* Попробуйте бесплатно - начало */
 .testing {
 }
 
 .testing-wrap {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 5.3571)), 7rem);
+    padding-bottom: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 4.4643)), 7rem);
 }
 
 .testing-grid {
@@ -530,8 +429,8 @@ nav a {
 }
 
 .testing-grid--col-a {
-    padding: 6rem;
-    gap: 3rem;
+    padding: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 3.5714)), 6rem);
+    gap: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 0.8929)), 3rem);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -540,14 +439,14 @@ nav a {
 .testing_h3 {
     text-transform: uppercase;
     color: var(--clr-primary);
-    font-size: clamp(2.1rem, calc(2.1rem + ((1vw - 0.32rem) * 0.6875)), 3.2rem);
+    font-size: clamp(1.8rem, calc(1.8rem + ((1vw - 0.32rem) * 1.25)), 3.2rem);
 }
 
 .testing_txt {
     color: var(--clr-base-normal);
     font-family: 'Inter', sans-serif;
     font-size: clamp(1.6rem, calc(1.6rem + ((1vw - 0.32rem) * 0.375)), 2.2rem);
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.4;
     min-width: 20ch;
     max-width: 40ch;
@@ -560,35 +459,7 @@ nav a {
 .testing-img {
     position: absolute;
     top: -10rem;
-    left: -10rem;
-}
-
-@media (min-width:768px) and (max-width:1024px) {
-    .testing-img {
-        top: 0rem;
-        left: 2rem;
-    }
-}
-
-@media (max-width:768px) {
-    .testing-img {
-        display: none;
-    }
-
-    .testing_txt {
-        text-align: center;
-    }
-
-    .testing-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .testing-grid--col-a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    left: -3rem;
 }
 
 /* Попробуйте бесплатно - конец */
@@ -597,27 +468,25 @@ nav a {
 }
 
 .for-whom-wrap {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 5.3571)), 7rem);
+    padding-bottom: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 5.3571)), 7rem);
 }
 
 .whom-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    min-height: 43rem;
-    max-height: 60rem;
     gap: 2rem;
 }
 
 .whom-grid-col {
     display: grid;
-    grid-template-rows: 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
     flex-direction: column;
     background-color: white;
     padding: 3rem;
     border-radius: 0.8rem;
     align-items: center;
-    gap: 7rem;
+    gap: 3rem;
 }
 
 .whom-img {
@@ -626,8 +495,10 @@ nav a {
 
 .whom-txt {
     color: var(--clr-base-normal);
-    font-size: 1.8rem;
+    font-size: clamp(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.25)), 1.8rem);
     text-align: center;
+    line-height: 120%;
+    font-weight: 500;
 }
 
 .whom-txt_wrap {
@@ -641,17 +512,16 @@ nav a {
 
 /* Кому будет полезен сервис - конец */
 /* Инструменты - начало */
-/* Инструменты - конец */
 .instruments-wrap {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 4.4643)), 7rem);
+    padding-bottom: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 4.4643)), 7rem);
 }
 
 .instruments_tab-box {
     width: 100%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    gap: clamp(0.5rem, calc(0.5rem + ((1vw - 0.32rem) * 0.4464)), 1rem);
 }
 
 .instruments_tab-btn {
@@ -659,20 +529,22 @@ nav a {
     align-items: center;
     justify-content: center;
     padding: 1rem 4rem;
-    border-radius: 2rem;
-    border: 2px solid gray;
-    font-size: 1.8rem;
+    border-radius: .6rem;
+    border: 1px solid gray;
+    font-size: clamp(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.3571)), 1.8rem);
+    font-weight: 400;
+    line-height: 110%;
 }
 
 .instruments_tab-box .instruments_tab-btn {
     color: gray;
     background: none;
-    padding: 1.8rem;
+    padding: 1rem;
     cursor: pointer;
 }
 
 .instruments_tab-btn.active {
-    border: 3px solid red;
+    border: 2px solid red;
     color: black;
 }
 
@@ -702,100 +574,263 @@ nav a {
     width: 100%;
     height: 100%;
     position: relative;
+    margin-top: 5rem;
 }
 
+/* Инструменты - конец */
 /* Tab in Tab- начало */
-.tabs {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    padding: 30px 20px;
-    box-shadow: 5px 5px 10px 5px #ccc;
-    overflow: hidden;
-    top: 50%;
-    margin-top: 30px;
-    border-radius: 20px;
+/* Tab in Tab - конец */
+/* Media запросы - начало */
+@media (max-width:1023px) {
+    .header-container {
+        gap: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 0.8929)), 2rem);
+        grid-template-columns: auto max-content max-content;
+    }
+
+    h1 {
+        letter-spacing: 0;
+    }
+
+    .header__btn__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        order: 1;
+    }
+
+    .nav__wrapper {
+        order: 2;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .hero {
+        height: auto;
+        padding-top: 14rem;
+        padding-bottom: 6rem;
+    }
+
+    .hero-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .hero-col--a {
+        width: 100%;
+    }
+
+    h1 {
+        max-width: 30ch;
+    }
+
+    .hero-col--a p {
+        max-width: 45ch;
+    }
+
+    .whom-grid-col {
+        padding: 2rem;
+        gap: 2rem;
+        grid-template-rows: 1fr max-content;
+    }
 }
 
-.tabs .tab-header {
-    float: left;
-    width: 25%;
-    height: 100%;
-    border-right: 1px solid #ccc;
-    padding: 50px 0px;
+@media (min-width:1024px) {
+    .nav-toggle-label {
+        display: none;
+    }
+
+    nav a {
+        opacity: 1;
+    }
+
+    nav {
+        all: unset;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 2rem;
+    }
+
+    nav a:hover {
+        color: var(--clr-primary);
+    }
 }
 
-.tabs .tab-header>div {
-    height: 50px;
-    line-height: 50px;
-    cursor: pointer;
-    padding-left: 10px;
-    color: var(--clr-secondary);
-    font-family: 'Inter', sans-serif;
-    font-size: 1.8rem;
-    text-align: left;
-    font-weight: 400;
-    line-height: 120%;
+@media (min-width:1024px) and (max-width:1729px) {
+    .hero {
+        height: 100vh;
+        padding-top: 25rem;
+        padding-bottom: 15rem;
+    }
 }
 
-.tabs .tab-header>div:hover,
-.tabs .tab-header>div.active {
-    color: #00acee;
+@media (min-width:1729px) {
+    .hero {
+        height: auto;
+        padding-top: 20rem;
+        padding-bottom: 10rem;
+    }
 }
 
-.tabs .tab-header div i {
-    display: inline-block;
-    margin-left: 10px;
-    margin-right: 5px;
+@media (min-width:768px) and (max-width:1024px) {
+    .testing-img {
+        top: 0rem;
+        left: 2rem;
+    }
 }
 
-.tabs .tab-content {
-    position: relative;
-    height: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+@media (max-width:600px) {
+    .hero-col--b {
+        display: none;
+    }
 }
 
-.tabs .tab-content>div>i {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background: #555;
-    color: #f5f5f5;
-    font-size: 25px;
-    font-weight: 600;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 50%;
+@media (min-width:500px) and (max-width:1024px) {
+    .whom-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
 }
 
-.tabs .tab-content>div {
-    position: absolute;
-    text-align: center;
-    padding: 40px 40px;
-    top: -200%;
-    transition: all 500ms ease-in-out;
+@media (max-width:500px) {
+    .whom-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 }
 
-.tabs .tab-content>div.active {
-    top: 0px;
+@media (min-width: 768px) {
+    .benefits-adaptive {
+        display: none;
+    }
+
+    .instruments_content-box .accordion {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    .testing-img {
+        display: none;
+    }
+
+    .benefits {
+        display: none;
+    }
+
+    .testing_txt {
+        text-align: center;
+    }
+
+    .testing-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .testing-grid--col-a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .instruments_content-box .content {
+        display: none;
+    }
+
+    .instruments_content-box .content.active {
+        display: none;
+    }
+}
+
+/* Media запросы - конец */
+/* test */
+.tgrid {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 6rem;
+}
+
+.tabs-wrap {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.tabs .tab-indicator {
-    position: absolute;
-    width: 4px;
-    height: 50px;
-    background: #00acee;
-    left: 25.5%;
-    top: 80px;
-    transition: all 500ms ease-in-out;
+.tabs-content-wrap {
+    display: none;
 }
 
-/* Tab in Tab - конец */
+.tabs-content-wrap--active {
+    display: block;
+    flex-direction: column;
+    gap: 1.5rem;
+    overflow: hidden;
+}
+
+.tabs-triggers {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.tabs-triggers__item {
+    color: var(--clr-secondary);
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.25)), 1.8rem);
+    text-align: left;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.tabs-content {
+    overflow: hidden;
+}
+
+.tabs-triggers__item:hover {
+    color: var(--clr-primary);
+}
+
+.tabs-triggers__item--active {
+    color: #A4161A;
+}
+
+.tabs_image-img {
+    background-repeat: no-repeat;
+    object-fit: cover;
+    top: 0;
+    bottom: 0;
+    border-radius: 20px;
+}
+
+.tabs_text-number {
+    font-family: 'Inter', sans-serif;
+    color: var(--clr-secondary);
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.tabs_text {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.tabs_text_p {
+    min-width: 16ch;
+    max-width: 50ch;
+    font-weight: 300;
+}
