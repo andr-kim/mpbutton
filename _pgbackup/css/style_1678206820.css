@@ -940,24 +940,19 @@ nav a {
 
 /* Media запросы - конец */
 /* Price - начало */
-.price_tabs_wrap {
+.price-wrap {
     padding-top: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 4.4643)), 7rem);
     padding-bottom: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 4.4643)), 7rem);
 }
 
-.tabs__nav {
+.price_tab-box {
     width: 100%;
     display: flex;
     align-items: center;
     gap: clamp(0.5rem, calc(0.5rem + ((1vw - 0.32rem) * 0.4464)), 1rem);
 }
 
-.tabs-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-.tabs-nav__item {
+.price_tab-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -969,28 +964,40 @@ nav a {
     line-height: 110%;
 }
 
-.tabs__nav .tabs-nav__item {
+.price_tab-box .price_tab-btn {
     color: gray;
     background: none;
     padding: 1rem;
     cursor: pointer;
 }
 
-.tabs-nav__item.is-active {
+.price_tab-btn.active {
     border: 2px solid red;
     color: black;
 }
 
-.tabs__content {
+.price_content-box {
     height: 900px;
 }
 
-.tabs__content .tab {
+.price_content-box .price-content {
     display: none;
     animation: moving .5s ease;
 }
 
-.tab.is-active {
+@keyframes moving {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.price_content-box .price-content.active {
     display: block;
     width: 100%;
     height: 100%;
