@@ -560,6 +560,7 @@ nav a {
 .instruments_content-box .content {
     display: none;
     animation: moving .5s ease;
+    background-color: #a51919;
 }
 
 @keyframes moving {
@@ -1141,7 +1142,6 @@ nav a {
 
 .price-card_text-wrap {
     display: flex;
-    gap: 0.4rem;
 }
 
 .price__icon {

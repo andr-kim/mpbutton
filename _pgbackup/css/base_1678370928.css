@@ -24,6 +24,7 @@
 }
 
 .container {
+    height: 100%;
     max-width: 1440px;
     margin: auto;
     padding-left: clamp(1.5rem, calc(1.5rem + ((1vw - 0.32rem) * 4.0179)), 6rem);

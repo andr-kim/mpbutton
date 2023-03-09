@@ -19,13 +19,6 @@ h2 {
     margin-bottom: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 1.25)), 3rem);
 }
 
-h3 {
-    font-size: clamp(2.1rem, calc(2.1rem + ((1vw - 0.32rem) * 0.6875)), 3.2rem);
-    line-height: 110%;
-    color: var(--clr-black);
-    margin-bottom: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 1.25)), 3rem);
-}
-
 /* HEADER - начало */
 header {
     background-color: var(--clr-secondary);
@@ -34,7 +27,6 @@ header {
     width: 100%;
     z-index: 999;
     height: 8rem;
-    display: flex;
 }
 
 .header-container {
@@ -241,7 +233,6 @@ nav a {
     border-radius: 0.8rem;
     align-items: center;
     color: #ffffff;
-    margin-bottom: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 1.25)), 3rem);
 }
 
 .primary-btn__icon {
@@ -557,6 +548,10 @@ nav a {
     color: black;
 }
 
+.instruments_content-box {
+    height: 900px;
+}
+
 .instruments_content-box .content {
     display: none;
     animation: moving .5s ease;
@@ -577,8 +572,7 @@ nav a {
 .instruments_content-box .content.active {
     display: block;
     width: 100%;
-
-    /* height: 100%; */
+    height: 100%;
     position: relative;
     margin-top: 5rem;
 }
@@ -958,6 +952,11 @@ nav a {
     gap: clamp(0.5rem, calc(0.5rem + ((1vw - 0.32rem) * 0.4464)), 1rem);
 }
 
+.tabs-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
 .tabs-nav__item {
     display: flex;
     align-items: center;
@@ -983,6 +982,7 @@ nav a {
 }
 
 .tabs__content {
+    height: 900px;
 }
 
 .tabs__content .tab {
@@ -993,165 +993,9 @@ nav a {
 .tab.is-active {
     display: block;
     width: 100%;
+    height: 100%;
     position: relative;
     margin-top: 5rem;
 }
 
 /* Price - конец */
-.price_card-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 5rem;
-    height: 100%;
-}
-
-.price {
-    margin-bottom: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 1.25)), 3rem);
-}
-
-.faq {
-}
-
-.faq-wrap {
-    padding-top: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 5.3571)), 7rem);
-    padding-bottom: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 5.3571)), 7rem);
-}
-
-.faq-accordion {
-    margin-top: 2rem;
-}
-
-.faq-accordion .item {
-    overflow: hidden;
-    margin-bottom: 10px;
-    border-radius: 8px;
-}
-
-.faq-accordion .title {
-    position: relative;
-    padding: 2rem 4rem 2rem 2rem;
-    background-color: #fff;
-    transition: 0.3s background-color;
-}
-
-.faq-accordion .title:hover {
-    cursor: pointer;
-    background-color: lightgray;
-}
-
-.faq-accordion .title::before {
-    position: absolute;
-    content: '';
-    right: 14px;
-    top: 50%;
-    width: 15px;
-    height: 2px;
-    background-color: #000;
-    transform: translateY(-50%);
-}
-
-.faq-accordion .title::after {
-    position: absolute;
-    content: '';
-    right: 20px;
-    top: 50%;
-    width: 2px;
-    height: 15px;
-    background-color: #000;
-    transform: translateY(-50%);
-    transition: 0.3 opacity;
-}
-
-.faq-accordion .title.active::after {
-    opacity: 0;
-}
-
-.faq-accordion .box {
-    overflow: hidden;
-    max-height: 0;
-    transition: 0.3s max-height ease-out;
-}
-
-.faq-accordion .text {
-    padding: 10px;
-    border-top: 1px solid #ddd;
-    background-color: #fff;
-}
-
-.accordion-content-wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    overflow: hidden;
-    padding: 2rem 1rem;
-}
-
-.accordion_text {
-}
-
-.feedback {
-}
-
-.feedback-wrap {
-    padding-top: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 5.3571)), 7rem);
-    padding-bottom: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 5.3571)), 7rem);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.fd-text-wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.fd_title {
-}
-
-.fd_title {
-    font-weight: normal;
-    font-size: 1.8rem;
-    color: var(--clr-base-normal);
-}
-
-.fd_text {
-    font-weight: normal;
-    color: var(--clr-black);
-    font-size: 1.8rem;
-}
-
-.fd-wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-/* Feedback Form - начало */
-.price-card {
-    height: 100%;
-}
-
-.price-card_wrap {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1px;
-    height: 100%;
-    justify-content: space-between;
-}
-
-.price-card_text-wrap {
-    display: flex;
-    gap: 0.4rem;
-}
-
-.price__icon {
-    width: 30px;
-}
-
-.tabs {
-    min-height: 1400px;
-    display: grid;
-    grid-template-rows: max-content max-content;
-}
-
-
