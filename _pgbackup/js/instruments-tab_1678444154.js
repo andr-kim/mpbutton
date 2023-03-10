@@ -15,7 +15,7 @@ tabs.forEach((tab,index)=>{
 })
 
 const ttabs= document.querySelectorAll('.tariff_tab-btn');
-const all_tcontent2= document.querySelectorAll('.tcontent');
+const all_tcontent= document.querySelectorAll('.content');
 
 ttabs.forEach((ttab,index)=>{
     ttab.addEventListener('click', (e)=>{
@@ -23,9 +23,9 @@ ttabs.forEach((ttab,index)=>{
         ttab.classList.add('active');
 
 
-    all_tcontent2.forEach(tcontent=>{tcontent.classList.remove('active')});
-    all_tcontent2[index].classList.add('active');
+    all_tcontent.forEach(content=>{content.classList.remove('active')});
+    all_tcontent[index].classList.add('active');
     })
 
-
+    
 })

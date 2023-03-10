@@ -993,6 +993,8 @@ nav a {
     line-height: 110%;
 }
 
+*/
+
 .tabs__nav .tabs-nav__item {
     color: gray;
     background: none;
@@ -1188,85 +1190,3 @@ footer {
     font-family: 'Inter', sans-serif;
     text-align: right;
 }
-
-/* Тарифы - начало тест */
-.tariff-wrap {
-    padding-top: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 4.4643)), 7rem);
-    padding-bottom: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 4.4643)), 7rem);
-}
-
-.tariff_tab-box {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: clamp(0.5rem, calc(0.5rem + ((1vw - 0.32rem) * 0.4464)), 1rem);
-}
-
-.tariff_tab-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 4rem;
-    border-radius: .6rem;
-    border: 1px solid gray;
-    font-size: clamp(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.3571)), 1.8rem);
-    font-weight: 400;
-    line-height: 110%;
-}
-
-.tariff_tab-box .tariff_tab-btn {
-    color: gray;
-    background: none;
-    padding: 1rem;
-    cursor: pointer;
-}
-
-.tariff_tab-btn.active {
-    border: 2px solid red;
-    color: black;
-}
-
-.tariff_content-box .tcontent {
-    display: none;
-    animation: moving .5s ease;
-}
-
-@keyframes moving {
-    from {
-        transform: translateX(50px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
-
-.tariff_content-box .tcontent.active {
-    display: block;
-    width: 100%;
-    position: relative;
-    margin-top: 5rem;
-}
-
-.tcontent_grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 2rem;
-}
-
-.tcontent_text-wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: flex-start;
-}
-
-.price_card-wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-/* Тарифы - конец */

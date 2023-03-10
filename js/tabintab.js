@@ -3,7 +3,6 @@ document.querySelectorAll('.tabs-triggers__item').forEach((item) =>
 		e.preventDefault();
 		const id = e.target.getAttribute('href').replace('#', '');
 
-
 		document.querySelectorAll('.tabs-triggers__item').forEach(
 			(child) => child.classList.remove('tabs-triggers__item--active')
 		);
@@ -17,6 +16,6 @@ document.querySelectorAll('.tabs-triggers__item').forEach((item) =>
 );
 
 document.querySelector('.tabs-triggers__item').click();
-document.querySelector('[tabs-triggers__item="#tab-201"]').classList.add('tabs-triggers__item--active');
+document.querySelector('[href="#tab-201"]').classList.add('tabs-triggers__item--active');
 
 

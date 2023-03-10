@@ -17,6 +17,6 @@ document.querySelectorAll('.tabs2-triggers__item').forEach((item) =>
 );
 
 document.querySelector('.tabs2-triggers__item').click();
-document.querySelector('[tabs2-triggers__item="#tab-301"]').classList.add('tabs2-triggers__item--active');
+document.querySelector('[href="#tab-301"]').classList.add('tabs2-triggers__item--active');
 
 

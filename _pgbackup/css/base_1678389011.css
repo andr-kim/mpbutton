@@ -24,9 +24,13 @@
 }
 
 .container {
-    max-width: 144rem;
+    max-width: 1440px;
     margin: auto;
     padding-left: clamp(1.5rem, calc(1.5rem + ((1vw - 0.32rem) * 4.0179)), 6rem);
     padding-right: clamp(1.5rem, calc(1.5rem + ((1vw - 0.32rem) * 4.0179)), 6rem);
-    height: 100%;
+}
+
+p {
+    font-size: clamp(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.5)), 2.2rem);
+    color: var(--clr-secondary);
 }
