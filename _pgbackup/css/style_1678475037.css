@@ -858,6 +858,10 @@ nav a {
     nav a:hover {
         color: var(--clr-primary);
     }
+
+    .tcontent_grid {
+        display: none;
+    }
 }
 
 @media (min-width:1024px) and (max-width:1729px) {
@@ -1278,31 +1282,4 @@ footer {
 }
 
 .tcontent_price {
-}
-
-@media (max-width:1024px) {
-    .tcontent_grid {
-        display: grid;
-        grid-template-columns: 25rem 25rem 25rem 25rem;
-        overflow-x: auto;
-        overscroll-behavior-inline: contain;
-    }
-
-    .tcontent_grid::-webkit-scrollbar {
-        background-color: red;
-    }
-
-    /* .tcontent_grid::-webkit-scrollbar{
-        width: 0; */
-}
-
-.snaps-inline {
-    scroll-snap-type: inline mandatory;
-    scroll-padding-inline: 2rem;
-}
-
-.snaps-inline > * {
-    scroll-snap-align: start;
-}
-
 }

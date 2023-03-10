@@ -1257,6 +1257,17 @@ footer {
     column-gap: 2rem;
 }
 
+@media (max-width:1023px) {
+    .tcontent_grid {
+    }
+
+    .tcontent_grid {
+    }
+
+    .tcontent_grid {
+    }
+}
+
 .tcontent_text-wrap {
     display: flex;
     flex-direction: column;
@@ -1282,14 +1293,8 @@ footer {
 
 @media (max-width:1024px) {
     .tcontent_grid {
-        display: grid;
-        grid-template-columns: 25rem 25rem 25rem 25rem;
         overflow-x: auto;
         overscroll-behavior-inline: contain;
-    }
-
-    .tcontent_grid::-webkit-scrollbar {
-        background-color: red;
     }
 
     /* .tcontent_grid::-webkit-scrollbar{
