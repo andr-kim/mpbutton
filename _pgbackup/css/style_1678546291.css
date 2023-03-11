@@ -945,14 +945,6 @@ nav a {
     .tgrid {
         display: none;
     }
-
-    .tgrid2 {
-        display: none;
-    }
-
-    .tgrid3 {
-        display: none;
-    }
 }
 
 /* Media запросы - конец */
@@ -1325,7 +1317,6 @@ footer {
         grid-template-columns: 25rem 25rem 25rem 25rem;
         overflow-x: auto;
         overscroll-behavior-inline: contain;
-        padding-bottom: 2rem;
     }
 
     .tcontent_grid::-webkit-scrollbar {

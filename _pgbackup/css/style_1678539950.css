@@ -945,14 +945,6 @@ nav a {
     .tgrid {
         display: none;
     }
-
-    .tgrid2 {
-        display: none;
-    }
-
-    .tgrid3 {
-        display: none;
-    }
 }
 
 /* Media запросы - конец */
@@ -1157,7 +1149,7 @@ nav a {
 .price-card_text-wrap {
     display: flex;
     justify-content: space-between;
-    gap: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 0.4464)), 1.5rem);
+    gap: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 0.4464)), 1.5rem);;
 }
 
 .price__icon {
@@ -1278,15 +1270,6 @@ footer {
     padding-top: 20px; */
 }
 
-.tcontent_grid3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 4rem;
-
-    /* padding-bottom: 20px;
-    padding-top: 20px; */
-}
-
 .tcontent_text-wrap {
     display: flex;
     flex-direction: column;
@@ -1297,7 +1280,7 @@ footer {
     display: flex;
     flex-direction: column;
     margin-top: clamp(0.5rem, calc(0.5rem + ((1vw - 0.32rem) * 0.8929)), 1.5rem);
-    gap: clamp(0.8rem, calc(0.8rem + ((1vw - 0.32rem) * 0.1786)), 1rem);
+    gap: clamp(0.8rem, calc(0.8rem + ((1vw - 0.32rem) * 0.1786)), 1rem);;
 }
 
 /* Тарифы - конец */
@@ -1314,18 +1297,12 @@ footer {
     font-weight: 500;
 }
 
-.tcontent_discount {
-    text-decoration: line-through;
-    color: var(--clr-base-dark);
-}
-
 @media (max-width:1024px) {
     .tcontent_grid {
         display: grid;
         grid-template-columns: 25rem 25rem 25rem 25rem;
         overflow-x: auto;
         overscroll-behavior-inline: contain;
-        padding-bottom: 2rem;
     }
 
     .tcontent_grid::-webkit-scrollbar {
@@ -1349,12 +1326,7 @@ footer {
 
 .mp-icons-wrap {
     display: flex;
-    gap: clamp(0.5rem, calc(0.5rem + ((1vw - 0.32rem) * 0.4464)), 1rem);
-}
-
-.tcontent_price-wrap {
-    display: flex;
-    gap: 1rem;
+    gap: clamp(0.5rem, calc(0.5rem + ((1vw - 0.32rem) * 0.4464)), 1rem);;
 }
 }
 
