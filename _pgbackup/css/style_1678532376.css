@@ -1149,12 +1149,11 @@ nav a {
 
 .price-card_text-wrap {
     display: flex;
-    gap: clamp(0.5rem, calc(0.5rem + ((1vw - 0.32rem) * 0.2679)), 0.8rem);;
-    justify-content: space-between;
+    gap: clamp(0.3rem, calc(0.3rem + ((1vw - 0.32rem) * 0.1786)), 0.5rem);
 }
 
 .price__icon {
-    width: clamp(1.2rem, calc(1.2rem + ((1vw - 0.32rem) * 0.3571)), 1.6rem);;
+    width: clamp(1.8rem, calc(1.8rem + ((1vw - 0.32rem) * 1.0714)), 3rem);
 }
 
 /* Tariffs section - конец */
@@ -1195,7 +1194,6 @@ footer {
 .tariff-wrap {
     padding-top: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 4.4643)), 7rem);
     padding-bottom: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 4.4643)), 7rem);
-    flex-direction: column;
 }
 
 .tariff_tab-box {
@@ -1257,8 +1255,8 @@ footer {
     display: block;
     width: 100%;
     position: relative;
+    margin-top: 5rem;
     height: 100%;
-    margin-top: clamp(1.5rem, calc(1.5rem + ((1vw - 0.32rem) * 0.4464)), 2rem);;
 }
 
 .tcontent_grid {
@@ -1272,6 +1270,7 @@ footer {
 .tcontent_text-wrap {
     display: flex;
     flex-direction: column;
+    gap: 2rem;
     align-items: flex-start;
 }
 
@@ -1283,16 +1282,12 @@ footer {
 
 /* Тарифы - конец */
 .tcontent_title-card {
+    font-size: 2.8rem;
     color: var(--clr-black);
     font-weight: 700;
-    margin-bottom: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 0.8929)), 2rem);
-    font-size: clamp(1.8rem, calc(1.8rem + ((1vw - 0.32rem) * 0.8929)), 2.8rem);
 }
 
 .tcontent_price {
-    margin-bottom: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 0.8929)), 2rem);
-    font-size: clamp(1.6rem, calc(1.6rem + ((1vw - 0.32rem) * 0.4464)), 2.1rem);
-    font-weight: 500;
 }
 
 @media (max-width:1024px) {
@@ -1318,8 +1313,5 @@ footer {
 
 /* .tcontent_grid::-webkit-scrollbar{
         width: 0; */
-.price-txt {
-    font-size: clamp(1.3rem, calc(1.3rem + ((1vw - 0.32rem) * 0.2679)), 1.6rem);;
-}
 }
 

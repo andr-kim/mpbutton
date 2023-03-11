@@ -1149,12 +1149,11 @@ nav a {
 
 .price-card_text-wrap {
     display: flex;
-    gap: clamp(0.5rem, calc(0.5rem + ((1vw - 0.32rem) * 0.2679)), 0.8rem);;
-    justify-content: space-between;
+    gap: 0.4rem;
 }
 
 .price__icon {
-    width: clamp(1.2rem, calc(1.2rem + ((1vw - 0.32rem) * 0.3571)), 1.6rem);;
+    width: 30px;
 }
 
 /* Tariffs section - конец */
@@ -1195,7 +1194,6 @@ footer {
 .tariff-wrap {
     padding-top: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 4.4643)), 7rem);
     padding-bottom: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 4.4643)), 7rem);
-    flex-direction: column;
 }
 
 .tariff_tab-box {
@@ -1203,13 +1201,6 @@ footer {
     display: flex;
     align-items: center;
     gap: clamp(0.5rem, calc(0.5rem + ((1vw - 0.32rem) * 0.4464)), 1rem);
-}
-
-@media (max-width:440px) {
-    .tariff_tab-box {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
 }
 
 .tariff_tab-btn {
@@ -1257,42 +1248,36 @@ footer {
     display: block;
     width: 100%;
     position: relative;
-    height: 100%;
-    margin-top: clamp(1.5rem, calc(1.5rem + ((1vw - 0.32rem) * 0.4464)), 2rem);;
+    margin-top: 5rem;
 }
 
 .tcontent_grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 2rem;
-    padding-bottom: 20px;
-    padding-top: 20px;
 }
 
 .tcontent_text-wrap {
     display: flex;
     flex-direction: column;
+    gap: 2rem;
     align-items: flex-start;
 }
 
 .price_card-wrap {
     display: flex;
     flex-direction: column;
-    gap: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 0.4464)), 1.5rem);
+    gap: 1.5rem;
 }
 
 /* Тарифы - конец */
 .tcontent_title-card {
+    font-size: 2.8rem;
     color: var(--clr-black);
     font-weight: 700;
-    margin-bottom: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 0.8929)), 2rem);
-    font-size: clamp(1.8rem, calc(1.8rem + ((1vw - 0.32rem) * 0.8929)), 2.8rem);
 }
 
 .tcontent_price {
-    margin-bottom: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 0.8929)), 2rem);
-    font-size: clamp(1.6rem, calc(1.6rem + ((1vw - 0.32rem) * 0.4464)), 2.1rem);
-    font-weight: 500;
 }
 
 @media (max-width:1024px) {
@@ -1304,22 +1289,20 @@ footer {
     }
 
     .tcontent_grid::-webkit-scrollbar {
+        background-color: red;
     }
 
-    .snaps-inline {
-        scroll-snap-type: inline mandatory;
-        scroll-padding-inline: 2rem;
-    }
-
-    .snaps-inline > * {
-        scroll-snap-align: start;
-    }
-}
-
-/* .tcontent_grid::-webkit-scrollbar{
+    /* .tcontent_grid::-webkit-scrollbar{
         width: 0; */
-.price-txt {
-    font-size: clamp(1.3rem, calc(1.3rem + ((1vw - 0.32rem) * 0.2679)), 1.6rem);;
-}
 }
 
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 2rem;
+}
+
+.snaps-inline > * {
+    scroll-snap-align: start;
+}
+
+}
