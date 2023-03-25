@@ -1267,7 +1267,7 @@ nav a {
 
 .mp-icons-wrap {
     display: flex;
-    gap: clamp(0.5rem, calc(0.5rem + ((1vw - 0.32rem) * 0.2679)), 0.8rem);
+    gap: clamp(0.5rem, calc(0.5rem + ((1vw - 0.32rem) * 0.4464)), 1rem);
 }
 
 .tcontent_price-wrap {
@@ -1299,9 +1299,11 @@ footer {
 
 .footer_nav {
     grid-area: footer_nav;
-    display: flex;
+    display: grid;
     align-items: center;
+    grid-template-columns: max-content max-content;
     justify-content: center;
+    gap: 2rem;
 }
 
 .footer_feedback-form {
@@ -1427,12 +1429,12 @@ textarea {
 
     .footer_nav {
         row-gap: 1rem;
+        align-items: center;
         grid-template-columns: 1fr;
-        justify-content: flex-start;
     }
 
     .footer_navlink-wrap > a.footer_link {
-        text-align: left;
+        text-align: start;
         gap: 1rem;
     }
 
@@ -1447,9 +1449,10 @@ textarea {
 
 @media (max-width:580px) {
     .footer-container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 3rem;
-        grid-template-areas: "footer_contacts-wrap footer_nav"  "footer_feedback-form footer_feedback-form" "footer_bottom footer_bottom"
+        grid-template-areas: "footer_contacts-wrap"  "footer_feedback-form"
+    "footer_nav" "footer_bottom"
     ;
     }
 
@@ -1460,9 +1463,6 @@ textarea {
 
     .footer_nav {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 5rem;
     }
 
     .footer_feedback-form {
@@ -1473,10 +1473,5 @@ textarea {
 
     .footer_bottom {
         padding-top: 3rem;
-    }
-
-    .footer_navlink-wrap > a.footer_link {
-        text-align: center;
-        gap: 1rem;
     }
 }
